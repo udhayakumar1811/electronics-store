@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        #btnn {
+            background-color: white;
+            color: #0d6efd;
+            border: 2px solid white;
+            transition: all 0.3s ease;
+        }
+
+        #btnn:hover {
+            background-color: #0d6efd;
+            color: white;
+            border-color: #0d6efd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="home" class="container-fluid py-2" style="background-color: #000D21;">
+        <div class="row align-items-center">
+            <div class="col-3 ps-5">
+                <a href="#home"><img src="logo.png" alt="Brand Logo" style="width: 200px; height: 60px;"></a>
+            </div>
+            <div class="col-6">
+                <input type="text" class="form-control" placeholder="Search...">
+            </div>
+            <div class="col-3 d-flex justify-content-end gap-5 pe-5">
+                <a href="login.html" class="text-light text-decoration-none">Login</a>
+                <a href="#" class="text-light text-decoration-none">🛒 Cart</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid sticky-top" style="background-color: #001E4B;">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <ul class="navbar-nav ms-5">
+                <li class="nav-item dropdown ">
+                    <a class="btn btn-primary dropdown-toggle px-3" type="button" data-bs-toggle="dropdown">
+                        All Categories
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Mobiles</a></li>
+                        <li><a class="dropdown-item" href="#">Laptops</a></li>
+                        <li><a class="dropdown-item" href="#">Headphones</a></li>
+                        <li><a class="dropdown-item" href="#">Smart Watches</a></li>
+                        <li><a class="dropdown-item" href="#">Gaming</a></li>
+                        <li><a class="dropdown-item" href="#">Speakers</a></li>
+                        <li><a class="dropdown-item" href="#">Cameras</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="collapse navbar-collapse me-5">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#deals">Deals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#service">Service</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-fluid p-0 position-relative">
+        <img class="img-fluid w-100" style="height: 400px; object-fit: cover;" src="heroBg.jpg" alt="Hero Background">
+
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-5 text-white">
+                        <p class="fw-bolder mb-0" style="font-size:48px;">Next Generation</p>
+                        <p class="fw-bolder mb-0 text-warning" style="font-size:48px;">Electronics</p>
+                        <p class="fw-medium mb-3">Best Deals on Mobiles, Laptops, Smart TVs, Speakers & Cameras</p>
+                        <a href="#shop" class="btn btn-primary px-4 py-2 fw-bold">Shop Now</a>
+                    </div>
+                    <div class="col-7 text-end">
+                        <img style="max-height: 350px; width: auto;" src="heroImage.png" alt="Featured Product"
+                            class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="position-absolute d-flex justify-content-center w-100 " style=" margin-top: -3%;">
+            <div class=" shadow-sm rounded d-flex flex-wrap justify-content-center gap-4 p-4  text-center"
+                style="background-color: #FEFEFE;">
+                <div class="ms-3">
+                    <a href="P8 - Mobile.html"><img src="./Product Image/mobile.png" alt="Mobile"
+                            style="height: 100px; width: 100px; object-fit: contain;"></a>
+                    <p class="m-0 mt-2 fw-medium small">Mobile</p>
+                </div>
+                <div class="me-3">
+                    <a href="P2 - camera.html"><img src="./Product Image/camera.png" alt="Camera"
+                            style="height: 100px; width: 100px; object-fit: contain;"></a>
+                    <p class="m-0 mt-2 fw-medium small">Camera</p>
+                </div>
+                <div class="me-3">
+                    <a href="P4 - laptop.html"><img src="./Product Image/laptop.png" alt="Laptop"
+                            style="height: 100px; width: 100px; object-fit: contain;"></a>
+                    <p class="m-0 mt-2 fw-medium small">Laptop</p>
+                </div>
+                <div class="me-3">
+                    <a href="P3 - Monitor.html"><img src="./Product Image/tv.png" alt="TV"
+                            style="height: 100px; width: 100px; object-fit: contain;"></a>
+                    <p class="m-0 mt-2 fw-medium small">Monitor</p>
+                </div>
+                <div class="me-3">
+                    <a href="P1 - Smart watch.html"><img src="./Product Image/watch.png" alt="Watch"
+                            style="height: 100px; width: 100px; object-fit: contain;"></a>
+                    <p class="m-0 mt-2 fw-medium small">Smart Watch</p>
+                </div>
+                <div class="me-3">
+                    <a href="P7 - Headset.html"><img src="./Product Image/boom headset.png" alt="Headset"
+                            style="height: 100px; width: 100px; object-fit: contain;"></a>
+                    <p class="m-0 mt-2 fw-medium small">Headset</p>
+                </div>
+                <div class="me-3">
+                    <a href="P9 - Air buds.html"><img src="./Product Image/air buds bg removed.png" alt="Air Buds"
+                            style="height: 100px; width: 100px; object-fit: contain;"></a>
+                    <p class="m-0 mt-2 fw-medium small">Air Buds</p>
+                </div>
+                <div class="me-3">
+                    <a href="P6 - spacker.html"><img src="./Product Image/bluetooth speaker.png" alt="Speaker"
+                            style="height: 100px; width: 100px; object-fit: contain;"></a>
+                    <p class="m-0 mt-2 fw-medium small">Speaker</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="service" class="container  shadow-sm rounded  p-4 text-center"
+        style="background-color: #F8F8F9; margin-top: 150px;">
+        <div class="row g-4 justify-content-center">
+
+            <div class="col-6 col-lg-3">
+                <div class="d-flex align-items-center justify-content-center gap-3">
+                    <div class=""><img style="height: 50px; width: 50px;" src="Product Image/Icons/fast delivery.png"
+                            alt=""></div>
+                    <div class="text-start">
+                        <p class="fw-bold mb-0">Fast Delivery</p>
+                        <p class="fw-light mb-0 small">Delivery in 24-48 Hours</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="d-flex align-items-center justify-content-center gap-3">
+                    <div class=""><img style="height: 50px; width: 50px;" src="Product Image/Icons/Return icon.png"
+                            alt=""></div>
+                    <div class="text-start">
+                        <p class="fw-bold mb-0">Easy Returns</p>
+                        <p class="fw-light mb-0 small">7 Days Return Policy</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="d-flex align-items-center justify-content-center gap-3">
+                    <div class=""><img style="height: 50px; width: 50px;" src="Product Image/Icons/secure.png" alt="">
+                    </div>
+                    <div class="text-start">
+                        <p class="fw-bold mb-0">Secure payment</p>
+                        <p class="fw-light mb-0 small">100% Secure payment</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="d-flex align-items-center justify-content-center gap-3">
+                    <div class=""><img style="height: 50px; width: 50px;" src="Product Image/Icons/warranty.png" alt="">
+                    </div>
+                    <div class="text-start">
+                        <p class="fw-bold mb-0">Warranty</p>
+                        <p class="fw-light mb-0 small">Official Warranty</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="shop" class="container shadow-sm rounded p-4 pt-2 mt-3" style="background-color: #F8F8F9;">
+
+        <div class="row mb-2">
+            <div class="col-6">
+                <h3 class="fs-5 fw-bold text-start mb-0">Featured Products</h3>
+            </div>
+            <div class="col-6">
+                <a class="text-primary d-flex small justify-content-end text-decoration-none" href="#">View All</a>
+            </div>
+        </div>
+
+        <div class="row g-3 g-md-4 justify-content-center">
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="card h-100 shadow-sm border-0 bg-white">
+                    <div class="px-2 px-sm-3 pt-2 pt-sm-3 pb-0 text-center">
+                        <a href="P1 - Smart watch.html">
+                            <img class="img-fluid m-0" src="./Product Image/watch.png" alt="Smart Watch"
+                                style="max-height: 120px; object-fit: contain;"></a>
+                    </div>
+
+                    <div class="card-body d-flex mt-0 flex-column text-start px-2 px-sm-3 pb-2 pb-sm-3 pt-1">
+                        <h5 class="card-title fs-6 fw-bold mb-1 text-truncate" title="Smart Watch">Smart Watch</h5>
+                        <p class="text-muted small mb-1">Amazfit</p>
+
+                        <div class="d-flex flex-wrap align-items-baseline gap-1">
+                            <span class="fw-bold fs-6 text-dark">₹2,999</span>
+                            <span class="text-muted text-decoration-line-through small style-discount">₹4,999</span>
+                        </div>
+
+                        <div class="d-flex gap-2 mt-2">
+                            <a href="#" class="btn btn-primary btn-sm py-2 fw-medium flex-grow-1 w-50 text-nowrap"
+                                style="font-size: 8px;">Add to Cart
+                            </a>
+                            <a href="P1 - Smart watch.html"
+                                class="btn btn-outline-primary btn-sm py-2 fw-medium flex-grow-1 w-50 text-nowrap"
+                                style="font-size: 8px;">Buy Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="card h-100 shadow-sm border-0 bg-white">
+                    <div class="px-2 px-sm-3 pt-2 pt-sm-3 pb-0 text-center">
+                        <a href="P2 - camera.html"> <img class="img-fluid m-0" src="./Product Image/camera.png"
+                                alt="Smart Watch" style="max-height: 120px; object-fit: contain;"></a>
+                    </div>
+
+                    <div class="card-body d-flex mt-0 flex-column text-start px-2 px-sm-3 pb-2 pb-sm-3 pt-1">
+                        <h5 class="card-title fs-6 fw-bold mb-1 text-truncate" title="DSLR Camera">DSLR Camera</h5>
+                        <p class="text-muted small mb-1">Canon</p>
+
+                        <div class="d-flex flex-wrap align-items-baseline gap-1">
+                            <span class="fw-bold fs-6 text-dark">₹54,999</span>
+                            <span class="text-muted text-decoration-line-through small style-discount">₹59,999</span>
+                        </div>
+
+                        <div class="d-flex gap-2 mt-2">
+                            <a href="" class="btn btn-primary btn-sm py-2 fw-medium flex-grow-1 w-50 text-nowrap"
+                                style="font-size: 8px;">Add to Cart
+                            </a>
+                            <a href="P2 - camera.html"
+                                class="btn btn-outline-primary btn-sm py-2 fw-medium flex-grow-1 w-50 text-nowrap"
+                                style="font-size: 8px;">Buy Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="card h-100 shadow-sm border-0 bg-white">
+                    <div class="px-2 px-sm-3 pt-2 pt-sm-3 pb-0 text-center">
+                        <a href="P3 - Monitor.html"><img class="img-fluid m-0" src="./Product Image/tv.png"
+                                alt="Smart Watch" style="max-height: 120px; object-fit: contain;"></a>
+                    </div>
+
+                    <div class="card-body d-flex mt-0 flex-column text-start px-2 px-sm-3 pb-2 pb-sm-3 pt-1">
+                        <h5 class="card-title fs-6 fw-bold mb-1 text-truncate" title="Monitor">Monitor</h5>
+                        <p class="text-muted small mb-1">Sony</p>
+
+                        <div class="d-flex flex-wrap align-items-baseline gap-1">
+                            <span class="fw-bold fs-6 text-dark">₹42,999</span>
+                            <span class="text-muted text-decoration-line-through small style-discount">₹49,999</span>
+                        </div>
+
+                        <div class="d-flex gap-2 mt-2">
+                            <a class="btn btn-primary btn-sm py-2 fw-medium flex-grow-1 w-50 text-nowrap"
+                                style="font-size: 8px;">Add to Cart
+                            </a>
+                            <a href="P3 - Monitor.html"
+                                class="btn btn-outline-primary btn-sm py-2 fw-medium flex-grow-1 w-50 text-nowrap"
+                                style="font-size: 8px;">Buy Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="card h-100 shadow-sm border-0 bg-white">
+                    <div class="px-2 px-sm-3 pt-2 pt-sm-3 pb-0 text-center">
+                        <a href="P4 - laptop.html"> <img class="img-fluid m-0" src="./Product Image/laptop.png"
+                                alt="Smart Watch" style="max-height: 120px; object-fit: contain;"></a>
+                    </div>
+
+                    <div class="card-body d-flex mt-0 flex-column text-start px-2 px-sm-3 pb-2 pb-sm-3 pt-1">
+                        <h5 class="card-title fs-6 fw-bold mb-1 text-truncate" title="laptop">Laptop</h5>
+                        <p class="text-muted small mb-1">ASUS</p>
+
+                        <div class="d-flex flex-wrap align-items-baseline gap-1">
+                            <span class="fw-bold fs-6 text-dark">₹67,999</span>
+                            <span class="text-muted text-decoration-line-through small style-discount">₹72,999</span>
+                        </div>
+
+                        <div class="d-flex gap-2 mt-2">
+                            <a class="btn btn-primary btn-sm py-2 fw-medium flex-grow-1 w-50 text-nowrap"
+                                style="font-size: 8px;">Add to Cart
+                            </a>
+                            <a href="P4 - laptop.html"
+                                class="btn btn-outline-primary btn-sm py-2 fw-medium flex-grow-1 w-50 text-nowrap"
+                                style="font-size: 8px;">Buy Now
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="card h-100 shadow-sm border-0 bg-white">
+
+                    <div class="px-2 px-sm-3 pt-2 pt-sm-3 pb-0 text-center">
+                        <a href="P5 - powerbank.html"> <img class="img-fluid m-0" src="./Product Image/powerbank.png"
+                                alt="Smart Watch" style="max-height: 120px; object-fit: contain;"></a>
+                    </div>
+
+                    <div class="card-body d-flex mt-0 flex-column text-start px-2 px-sm-3 pb-2 pb-sm-3 pt-1">
+                        <h5 class="card-title fs-6 fw-bold mb-1 text-truncate" title="Smart Watch">20000mAh Power Bank
+                        </h5>
+                        <p class="text-muted small mb-1">Mi</p>
+
+                        <div class="d-flex flex-wrap align-items-baseline gap-1">
+                            <span class="fw-bold fs-6 text-dark">₹1,799</span>
+                            <span class="text-muted text-decoration-line-through small style-discount">₹2,499</span>
+                        </div>
+
+                        <div class="d-flex gap-2 mt-2">
+                            <a class="btn btn-primary btn-sm py-2 fw-medium flex-grow-1 w-50 text-nowrap"
+                                style="font-size: 8px;">Add to Cart
+                            </a>
+                            <a href="P5 - powerbank.html"
+                                class="btn btn-outline-primary btn-sm py-2 fw-medium flex-grow-1 w-50 text-nowrap"
+                                style="font-size: 8px;">Buy Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="card h-100 shadow-sm border-0 bg-white">
+                    <div class="px-2 px-sm-3 pt-2 pt-sm-3 pb-0 text-center">
+                        <a href="P6 - spacker.html"> <img class="img-fluid m-0"
+                                src="./Product Image/bluetooth speaker.png" alt="bluetooth speaker"
+                                style="max-height: 120px; object-fit: contain;"></a>
+                    </div>
+
+                    <div class="card-body d-flex mt-0 flex-column text-start px-2 px-sm-3 pb-2 pb-sm-3 pt-1">
+                        <h5 class="card-title fs-6 fw-bold mb-1 text-truncate" title="Bluetooth Speaker">Bluetooth
+                            Speaker
+                        </h5>
+                        <p class="text-muted small mb-1">JBL</p>
+
+                        <div class="d-flex flex-wrap align-items-baseline gap-1">
+                            <span class="fw-bold fs-6 text-dark">₹3,499</span>
+                            <span class="text-muted text-decoration-line-through small style-discount">₹4,999</span>
+                        </div>
+
+                        <div class="d-flex gap-2 mt-2">
+                            <a class="btn btn-primary btn-sm py-2 fw-medium flex-grow-1 w-50 text-nowrap"
+                                style="font-size: 8px;">Add to Cart
+                            </a>
+                            <a href="P6 - spacker.html"
+                                class="btn btn-outline-primary btn-sm py-2 fw-medium flex-grow-1 w-50 text-nowrap"
+                                style="font-size: 8px;">Buy Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <div class="row g-3 justify-content-center">
+
+            <div id="deals" class="col-12 col-sm-6 col-lg-4">
+                <div class="p-3 rounded h-100 shadow-sm border" style="background-color: #4A3EB4;">
+                    <div class="d-flex align-items-center justify-content-between h-100 gap-2">
+                        <div class="d-flex flex-column text-start justify-content-center">
+                            <span class="text-white fw-semibold small mb-1">Today's Deal</span>
+                            <h4 class="text-white fs-4 fw-black mb-1">Up to 70% OFF</h4>
+                            <p class="text-white small mb-3">On Headphones</p>
+                            <div>
+                                <button id="btnn" class="btn btn-outline-primary btn-sm px-3 fw-medium">Shop
+                                    Now</button>
+                            </div>
+                        </div>
+                        <div class="text-center flex-shrink-0">
+                            <img class="img-fluid" src="Product Image/boom headset bg removed.png" alt="Headphones"
+                                style="max-height: 150px; width: auto; object-fit: contain;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="p-3 rounded h-100 shadow-sm border" style="background-color: #F6811C;">
+                    <div class="d-flex align-items-center justify-content-between h-100 gap-2">
+                        <div class="d-flex flex-column text-start justify-content-center">
+                            <span class="text-white fw-semibold small mb-1">Today's Deal</span>
+                            <h4 class="text-light fs-4 fw-black mb-1 ">Up to 70% OFF</h4>
+                            <p class="text-white small mb-3">On Headphones</p>
+                            <div>
+                                <button id="btnn" class="btn btn-outline-primary btn-sm px-3 fw-medium">Shop
+                                    Now</button>
+                            </div>
+                        </div>
+                        <div class="text-center flex-shrink-0">
+                            <img class="img-fluid" src="Product Image/smart watch bg removed.png" alt="Headphones"
+                                style="max-height: 150px; width: auto; object-fit: contain;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="p-3 rounded h-100 shadow-sm border" style="background-color: #3067B1;">
+                    <div class="d-flex align-items-center justify-content-between h-100 gap-2">
+                        <div class="d-flex flex-column text-start justify-content-center">
+                            <span class="text-white fw-semibold small mb-1">Buy One</span>
+                            <h4 class="text-white fs-4 fw-black mb-1 ">Get One</h4>
+                            <p class="text-white small mb-3">On Selected Accessories</p>
+                            <div>
+                                <button id="btnn" class="btn btn-outline-primary btn-sm px-3 fw-medium">Shop
+                                    Now</button>
+                            </div>
+                        </div>
+                        <div class="text-center flex-shrink-0">
+                            <img class="img-fluid" src="Product Image/air buds bg removed.png" alt="Headphones"
+                                style="max-height: 150px; width: auto; object-fit: contain;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="container mt-3 ">
+        <div class="row ">
+
+            <div class="col-sm-6 shadow pt-3 pb-2 rounded me-1" style="width: 560px;">
+                <div class="row">
+                    <div class="col-6">
+                        <p class="small fw-bold">Best Selling Products</p>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end align-items-center">
+                        <p class="small text-primary">View All</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+
+                    <div class="card h-100 ps-2 rounded-0  border-0 border-end border-end-secondary bg-white"
+                        style="width: 150px;">
+
+                        <div class="px-2 pb-0 text-center mt-2">
+                            <img class="img-fluid m-0" src="./Product Image/watch.png" alt="Smart Watch"
+                                style="max-height: 70px; object-fit: contain;">
+                        </div>
+
+                        <div class="card-body d-flex flex-column text-start px-2 pt-1 pb-2">
+                            <p class="card-title fw-bold mb-1 text-truncate" style="font-size: 12px;"
+                                title="Smart Watch">Smart Watch</p>
+                            <p class="small text-warning" style="font-size: 10px; margin-bottom: 5px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-half" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                </svg>
+
+
+                                <span class="text-secondary">(57)</span>
+                            </p>
+                            <p class="fw-bold text-dark mt-auto" style="font-size: 10px; margin-bottom: 5px;">₹2,999</p>
+                        </div>
+                    </div>
+
+                    <div class="card h-100 ps-2 rounded-0 border-0 border-end border-end-secondary bg-white"
+                        style="width: 150px;">
+
+                        <div class="px-2 pb-0 text-center mt-2">
+                            <img class="img-fluid m-0" src="./Product Image/bluetooth speaker.png" alt="Smart Watch"
+                                style="max-height: 70px; object-fit: contain;">
+                        </div>
+
+                        <div class="card-body d-flex flex-column text-start px-2 pt-1 pb-2">
+                            <p class="card-title fw-bold mb-1 text-truncate" style="font-size: 12px;"
+                                title="Smart Watch">Bluetooth Speaker</p>
+                            <p class="small text-warning" style="font-size: 10px; margin-bottom: 5px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-half" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                </svg>
+                                <span class="text-secondary">(34)</span>
+                            </p>
+                            <p class="fw-bold text-dark mt-auto" style="font-size: 10px; margin-bottom: 5px;">₹2,499</p>
+                        </div>
+                    </div>
+
+                    <div class="card h-100 ps-2 rounded-0 border-0 border-end border-end-secondary bg-white"
+                        style="width: 150px;">
+
+                        <div class="px-2 pb-0 text-center mt-2">
+                            <img class="img-fluid m-0" src="./Product Image/mobile.png" alt="mobile"
+                                style="max-height: 70px; object-fit: contain;">
+                        </div>
+
+                        <div class="card-body d-flex flex-column text-start px-2 pt-1 pb-2">
+                            <p class="card-title fw-bold mb-1 text-truncate" style="font-size: 12px;"
+                                title="Samsung Galaxy A15 5G">Samsung Galaxy A15 5G</p>
+                            <p class="small text-warning" style="font-size: 10px; margin-bottom: 5px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                </svg>
+                                <span class="text-secondary">(182)</span>
+                            </p>
+                            <p class="fw-bold text-dark mt-auto" style="font-size: 10px; margin-bottom: 5px;">₹16,499
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card h-100 ps-2 rounded-0 border-0 bg-white" style="width: 150px;">
+
+                        <div class="px-2 pb-0 text-center mt-2">
+                            <img class="img-fluid m-0" src="./Product Image/air buds bg removed.png" alt="Smart Watch"
+                                style="max-height: 70px; object-fit: contain;">
+                        </div>
+
+                        <div class="card-body d-flex flex-column text-start px-2 pt-1 pb-2">
+                            <p class="card-title fw-bold mb-1 text-truncate" style="font-size: 12px;"
+                                title="Smart Watch">Bluetooth Earbuds</p>
+                            <p class="small text-warning" style="font-size: 10px; margin-bottom: 5px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-half" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                </svg>
+                                <span class="text-secondary">(587)</span>
+                            </p>
+                            <p class="fw-bold text-dark mt-auto" style="font-size: 10px; margin-bottom: 5px;">₹1,099</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 shadow pt-3 pb-2 rounded ms-1" style="width: 560px;">
+                <div class="row">
+                    <div class="col-6 ">
+                        <p class="small fw-bold">New Arrivals</p>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end align-items-center">
+                        <p class="small text-primary">View All</p>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center rounded-0 align-items-center">
+
+                    <div class="card h-100 ps-2 border-0 rounded-0 border-end border-end-secondary bg-white"
+                        style="width: 150px;">
+
+                        <div class="px-2 pb-0 text-center mt-2">
+                            <img class="img-fluid m-0" src="./Product Image/dji drone.png" alt="Smart Watch"
+                                style="max-height: 70px; object-fit: contain;">
+                        </div>
+
+                        <div class="card-body d-flex flex-column  text-start px-2 pt-1 pb-2">
+                            <p class="card-title fw-bold mb-1 text-truncate" style="font-size: 12px;"
+                                title="Smart Watch">Smart Watch</p>
+                            <p class="small text-warning" style="font-size: 10px; margin-bottom: 5px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                </svg>
+                                <span class="text-secondary">(467)</span>
+                            </p>
+                            <p class="fw-bold text-dark mt-auto" style="font-size: 10px; margin-bottom: 5px;">₹86,000
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card h-100 ps-2 border-0 rounded-0 border-end border-end-secondary bg-white"
+                        style="width: 150px;">
+
+                        <div class="px-2 pb-0 text-center mt-2">
+                            <img class="img-fluid m-0" src="./Product Image/ps5 console.png" alt="Smart Watch"
+                                style="max-height: 70px; object-fit: contain;">
+                        </div>
+
+                        <div class="card-body d-flex flex-column text-start px-2 pt-1 pb-2">
+                            <p class="card-title fw-bold mb-1 text-truncate" style="font-size: 12px;"
+                                title="Smart Watch">ps5 console</p>
+                            <p class="small text-warning" style="font-size: 10px; margin-bottom: 5px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-half" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z" />
+                                </svg>
+
+                                <span class="text-secondary">(69)</span>
+                            </p>
+                            <p class="fw-bold text-dark mt-auto" style="font-size: 10px; margin-bottom: 5px;">₹1,05,000
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card h-100 ps-2 border-0 rounded-0 border-end border-end-secondary bg-white"
+                        style="width: 150px;">
+
+                        <div class="px-2 pb-0 text-center mt-2">
+                            <img class="img-fluid m-0" src="./Product Image/Sony Alpha ZV-E10K.png" alt="Smart Watch"
+                                style="max-height: 70px; object-fit: contain;">
+                        </div>
+
+                        <div class="card-body d-flex flex-column text-start px-2 pt-1 pb-2">
+                            <p class="card-title fw-bold mb-1 text-truncate" style="font-size: 12px;"
+                                title="Smart Watch">Sony Alpha ZV-E10K</p>
+                            <p class="small text-warning" style="font-size: 10px; margin-bottom: 5px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-half" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                </svg>
+                                <span class="text-secondary">(57)</span>
+                            </p>
+                            <p class="fw-bold text-dark mt-auto" style="font-size: 10px; margin-bottom: 5px;">₹63,990
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card h-100 ps-2 border-0 rounded-0 bg-white" style="width: 150px;">
+
+                        <div class="px-2 pb-0 text-center mt-2">
+                            <img class="img-fluid m-0" src="./Product Image/acerlaptop.png" alt="Smart Watch"
+                                style="max-height: 70px; object-fit: contain;">
+                        </div>
+
+                        <div class="card-body d-flex flex-column text-start px-2 pt-1 pb-2">
+                            <p class="card-title fw-bold mb-1 text-truncate" style="font-size: 12px;"
+                                title="Smart Watch">Acer Laptop</p>
+                            <p class="small text-warning" style="font-size: 10px; margin-bottom: 5px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-star" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                </svg>
+                                <span class="text-secondary">(57)</span>
+                            </p>
+                            <p class="fw-bold text-dark mt-auto" style="font-size: 10px; margin-bottom: 5px;">₹32,999
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container shadow-sm rounded  p-4 pt-2 text-center my-3" style="background-color: #F8F8F9;">
+
+        <div class="row mb-2 ">
+            <div class="col-12">
+                <h3 class="small fw-bold text-start mb-0" style="color: #283A81;">Why Choose ElectroMart?</h3>
+            </div>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+
+            <div class="col-6 col-lg-3">
+                <div class="d-flex align-items-center justify-content-center gap-3">
+                    <div class=""><img style="height: 50px; width: 50px;" src="Product Image/Icons/premium.png" alt="">
+                    </div>
+                    <div class="text-start">
+                        <p class="fw-bold mb-0">Premium products</p>
+                        <p class="fw-light mb-0 small">100% Original Products</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="d-flex align-items-center justify-content-center gap-3">
+                    <div class=""><img style="height: 50px; width: 50px;" src="Product Image/Icons/trusted.png" alt="">
+                    </div>
+                    <div class="text-start">
+                        <p class="fw-bold mb-0">Trusted Brands</p>
+                        <p class="fw-light mb-0 small">Top Brands in one place</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="d-flex align-items-center justify-content-center gap-3">
+                    <div class=""><img style="height: 50px; width: 50px;" src="Product Image/Icons/best price.png"
+                            alt="">
+                    </div>
+                    <div class="text-start">
+                        <p class="fw-bold mb-0">Best Price Guarantee</p>
+                        <p class="fw-light mb-0 small">Get the Best prices</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="d-flex align-items-center justify-content-center gap-3">
+                    <div class=""><img style="height: 50px; width: 50px;"
+                            src="Product Image/Icons/customer supports.png" alt="">
+                    </div>
+                    <div class="text-start">
+                        <p class="fw-bold mb-0">24/7 Customer Support</p>
+                        <p class="fw-light mb-0 small">We are Here to Help You</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="contact" class="container-fluid pt-5 pb-2" style="background-color: #000D21;">
+        <div class="container mb-0">
+            <div class="row">
+
+                <div class="col-12 col-md-3">
+                    <img style="height: 40px; object-fit: contain;" src="logo.png" alt="Brand Logo" class="mb-3">
+                    <p class="text-white-50 small mb-3">Your one-stop destination for<br>all electronics needs.</p>
+                    <div class="d-flex gap-3 align-items-center">
+                        <a href=""><img style="height: 40px; width: 40px;" src="Product Image/Icons/facebook.png"
+                                alt=""></a>
+                        <a href=""><img style="height: 40px; width: 40px;" src="Product Image/Icons/insta.png"
+                                alt=""></a>
+                        <a href=""><img style="height: 40px; width: 40px;" src="Product Image/Icons/youtube.png"
+                                alt=""></a>
+                        <a href=""><img style="height: 40px; width: 40px;" src="Product Image/Icons/twitter.png"
+                                alt=""></a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <h5 class="text-white fs-5 mb-3">Quick Links</h5>
+                    <a class="text-white-50 small d-block text-decoration-none mb-2" href="#home">Home</a>
+                    <a class="text-white-50 small d-block text-decoration-none mb-2" href="#shop">Shop</a>
+                    <a class="text-white-50 small d-block text-decoration-none mb-2" href="#deals">Deals</a>
+                    <a class="text-white-50 small d-block text-decoration-none mb-2" href="#about">About Us</a>
+                    <a class="text-white-50 small d-block text-decoration-none" href="#contact">Contact Us</a>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <h5 class="text-white fs-5 mb-3">My Account</h5>
+                    <a class="text-white-50 small d-block text-decoration-none mb-2" href="#orders">My Orders</a>
+                    <a class="text-white-50 small d-block text-decoration-none mb-2" href="#track">Track Order</a>
+                    <a class="text-white-50 small d-block text-decoration-none mb-2" href="#account">Account Details</a>
+                    <a class="text-white-50 small d-block text-decoration-none" href="login.html">Login</a>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <h5 class="text-white fs-5 mb-3">Contact Us</h5>
+                    <div class="d-flex flex-column gap-2">
+                        <a href="#" class="text-white-50 small text-decoration-none"><img src="" alt=""><span
+                                class="ms-2">+91 6381582969</span></a>
+
+                        <a href="" class="text-white-50 small text-decoration-none"><img src="" alt=""><span
+                                class="ms-2">support@electromart.com</span></a>
+
+                        <a href="" class="text-white-50 text-decoration-none small mb-0 mt-1"><img src="" alt=""><span
+                                class="ms-2">123, Electronic Street, Chennai - 600001, India</span></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary">
+
+            <div class="row align-items-center mt-0">
+
+                <div class="col-12 col-md-6 text-center text-md-start mb-2 mb-md-0">
+                    <p class="text-white-50 small mb-0">© 2026 ElectroMart, All Rights Reserved.</p>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="d-flex gap-3 justify-content-center justify-content-md-end ">
+                        <a href="#"><img class="rounded" style="height: 30px; width: 80px;"
+                                src="Product Image/Icons/visa.png" alt=""></a>
+                        <a href="#"><img class="rounded" style="height: 30px; width: 80px;"
+                                src="Product Image/Icons/mastercard.png" alt=""></a>
+                        <a href="#"><img class="rounded" style="height: 30px; width: 80px;"
+                                src="Product Image/Icons/upi.png" alt=""></a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
