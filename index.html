@@ -33,14 +33,18 @@
 <body>
 
     <div id="home" class="container-fluid py-2" style="background-color: #000D21;">
-        <div class="row align-items-center">
-            <div class="col-3 ps-5">
-                <a href="#home"><img src="logo.png" alt="Brand Logo" style="width: 200px; height: 60px;"></a>
+        <div class="row align-items-center gy-3 gy-md-0">
+            <div class="col-12 col-md-3 text-center text-md-start ps-md-5">
+                <a href="#home">
+                    <img src="logo.png" alt="Brand Logo" class="img-fluid" style="max-width: 150px; height: auto;">
+                </a>
             </div>
-            <div class="col-6">
+
+            <div class="col-12 col-md-6 px-3 px-md-0">
                 <input type="text" class="form-control" placeholder="Search...">
             </div>
-            <div class="col-3 d-flex justify-content-end gap-5 pe-5">
+
+            <div class="col-12 col-md-3 d-flex justify-content-center justify-content-md-end gap-3 gap-md-4 pe-md-5">
                 <a href="login.html" class="text-light text-decoration-none">Login</a>
                 <a href="#" class="text-light text-decoration-none">🛒 Cart</a>
             </div>
@@ -48,9 +52,9 @@
     </div>
 
     <div class="container-fluid sticky-top" style="background-color: #001E4B;">
-        <nav class="navbar navbar-expand-lg navbar-dark ">
-            <ul class="navbar-nav ms-5">
-                <li class="nav-item dropdown ">
+        <nav class="navbar navbar-expand-lg navbar-dark px-2 px-md-5">
+            <ul class="navbar-nav me-auto me-lg-0 mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
                     <a class="btn btn-primary dropdown-toggle px-3" type="button" data-bs-toggle="dropdown">
                         All Categories
                     </a>
@@ -66,8 +70,12 @@
                 </li>
             </ul>
 
-            <div class="collapse navbar-collapse me-5">
-                <ul class="navbar-nav ms-auto">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto text-center text-lg-start pt-3 pt-lg-0">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
                     <li class="nav-item"><a class="nav-link" href="#deals">Deals</a></li>
@@ -78,75 +86,76 @@
         </nav>
     </div>
 
-    <div class="container-fluid p-0 position-relative">
-        <img class="img-fluid w-100" style="height: 400px; object-fit: cover;" src="heroBg.jpg" alt="Hero Background">
+    <div class="container-fluid p-0 position-relative bg-dark" style="min-height: 400px;">
+        <img class="w-100 position-absolute top-0 start-0 h-100" style="object-fit: cover; " src="heroBg.jpg"
+            alt="Hero Background">
 
-        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
+        <div class="position-relative py-5 py-md-0 d-flex align-items-center w-100"
+            style="z-index: 2; min-height: 400px;">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-5 text-white">
-                        <p class="fw-bolder mb-0" style="font-size:48px;">Next Generation</p>
-                        <p class="fw-bolder mb-0 text-warning" style="font-size:48px;">Electronics</p>
-                        <p class="fw-medium mb-3">Best Deals on Mobiles, Laptops, Smart TVs, Speakers & Cameras</p>
-                        <a href="#shop" class="btn btn-primary px-4 py-2 fw-bold">Shop Now</a>
+                <div class="row align-items-center gy-4 gy-md-0">
+                    <div class="col-12 col-md-5 text-center text-md-start text-white">
+                        <h1 class="fw-bolder mb-0 display-4">Next Generation</h1>
+                        <h1 class="fw-bolder mb-2 text-warning display-4">Electronics</h1>
+                        <p class="fw-medium mb-4 fs-6">Best Deals on Mobiles, Laptops, Smart TVs, Speakers & Cameras</p>
+                        <a href="#shop" class="btn btn-primary px-4 py-2 fw-bold shadow">Shop Now</a>
                     </div>
-                    <div class="col-7 text-end">
-                        <img style="max-height: 350px; width: auto;" src="heroImage.png" alt="Featured Product"
+                    <div class="col-12 col-md-7 text-center text-md-end">
+                        <img style="max-height: 300px; width: auto;" src="heroImage.png" alt="Featured Product"
                             class="img-fluid">
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="position-absolute d-flex justify-content-center w-100 " style=" margin-top: -3%;">
-            <div class=" shadow-sm rounded d-flex flex-wrap justify-content-center gap-4 p-4  text-center"
-                style="background-color: #FEFEFE;">
-                <div class="ms-3">
-                    <a href="P8 - Mobile.html"><img src="./Product Image/mobile.png" alt="Mobile"
-                            style="height: 100px; width: 100px; object-fit: contain;"></a>
-                    <p class="m-0 mt-2 fw-medium small">Mobile</p>
-                </div>
-                <div class="me-3">
-                    <a href="P2 - camera.html"><img src="./Product Image/camera.png" alt="Camera"
-                            style="height: 100px; width: 100px; object-fit: contain;"></a>
-                    <p class="m-0 mt-2 fw-medium small">Camera</p>
-                </div>
-                <div class="me-3">
-                    <a href="P4 - laptop.html"><img src="./Product Image/laptop.png" alt="Laptop"
-                            style="height: 100px; width: 100px; object-fit: contain;"></a>
-                    <p class="m-0 mt-2 fw-medium small">Laptop</p>
-                </div>
-                <div class="me-3">
-                    <a href="P3 - Monitor.html"><img src="./Product Image/tv.png" alt="TV"
-                            style="height: 100px; width: 100px; object-fit: contain;"></a>
-                    <p class="m-0 mt-2 fw-medium small">Monitor</p>
-                </div>
-                <div class="me-3">
-                    <a href="P1 - Smart watch.html"><img src="./Product Image/watch.png" alt="Watch"
-                            style="height: 100px; width: 100px; object-fit: contain;"></a>
-                    <p class="m-0 mt-2 fw-medium small">Smart Watch</p>
-                </div>
-                <div class="me-3">
-                    <a href="P7 - Headset.html"><img src="./Product Image/boom headset.png" alt="Headset"
-                            style="height: 100px; width: 100px; object-fit: contain;"></a>
-                    <p class="m-0 mt-2 fw-medium small">Headset</p>
-                </div>
-                <div class="me-3">
-                    <a href="P9 - Air buds.html"><img src="./Product Image/air buds bg removed.png" alt="Air Buds"
-                            style="height: 100px; width: 100px; object-fit: contain;"></a>
-                    <p class="m-0 mt-2 fw-medium small">Air Buds</p>
-                </div>
-                <div class="me-3">
-                    <a href="P6 - spacker.html"><img src="./Product Image/bluetooth speaker.png" alt="Speaker"
-                            style="height: 100px; width: 100px; object-fit: contain;"></a>
-                    <p class="m-0 mt-2 fw-medium small">Speaker</p>
-                </div>
+    <div class="position-absolute d-flex justify-content-center w-100 " style=" margin-top: -3%;">
+        <div class=" shadow-sm rounded d-flex flex-wrap justify-content-center gap-4 p-4  text-center"
+            style="background-color: #FEFEFE;">
+            <div class="ms-3">
+                <a href="P8 - Mobile.html"><img src="./Product Image/mobile.png" alt="Mobile"
+                        style="height: 100px; width: 100px; object-fit: contain;"></a>
+                <p class="m-0 mt-2 fw-medium small">Mobile</p>
+            </div>
+            <div class="me-3">
+                <a href="P2 - camera.html"><img src="./Product Image/camera.png" alt="Camera"
+                        style="height: 100px; width: 100px; object-fit: contain;"></a>
+                <p class="m-0 mt-2 fw-medium small">Camera</p>
+            </div>
+            <div class="me-3">
+                <a href="P4 - laptop.html"><img src="./Product Image/laptop.png" alt="Laptop"
+                        style="height: 100px; width: 100px; object-fit: contain;"></a>
+                <p class="m-0 mt-2 fw-medium small">Laptop</p>
+            </div>
+            <div class="me-3">
+                <a href="P3 - Monitor.html"><img src="./Product Image/tv.png" alt="TV"
+                        style="height: 100px; width: 100px; object-fit: contain;"></a>
+                <p class="m-0 mt-2 fw-medium small">Monitor</p>
+            </div>
+            <div class="me-3">
+                <a href="P1 - Smart watch.html"><img src="./Product Image/watch.png" alt="Watch"
+                        style="height: 100px; width: 100px; object-fit: contain;"></a>
+                <p class="m-0 mt-2 fw-medium small">Smart Watch</p>
+            </div>
+            <div class="me-3">
+                <a href="P7 - Headset.html"><img src="./Product Image/boom headset.png" alt="Headset"
+                        style="height: 100px; width: 100px; object-fit: contain;"></a>
+                <p class="m-0 mt-2 fw-medium small">Headset</p>
+            </div>
+            <div class="me-3">
+                <a href="P9 - Air buds.html"><img src="./Product Image/air buds bg removed.png" alt="Air Buds"
+                        style="height: 100px; width: 100px; object-fit: contain;"></a>
+                <p class="m-0 mt-2 fw-medium small">Air Buds</p>
+            </div>
+            <div class="me-3">
+                <a href="P6 - spacker.html"><img src="./Product Image/bluetooth speaker.png" alt="Speaker"
+                        style="height: 100px; width: 100px; object-fit: contain;"></a>
+                <p class="m-0 mt-2 fw-medium small">Speaker</p>
             </div>
         </div>
     </div>
 
-    <div id="service" class="container  shadow-sm rounded  p-4 text-center"
-        style="background-color: #F8F8F9; margin-top: 150px;">
+    <div id="service" class="container  shadow-sm rounded  p-4 text-center" style="background-color: #F8F8F9; margin-top: 150px;">
         <div class="row g-4 justify-content-center">
 
             <div class="col-6 col-lg-3">
@@ -902,26 +911,25 @@
         </div>
     </div>
 
-    <div id="contact" class="container-fluid pt-5 pb-2" style="background-color: #000D21;">
-        <div class="container mb-0">
-            <div class="row">
-
-                <div class="col-12 col-md-3">
+    <div id="contact" class="container-fluid pt-5 pb-3" style="background-color: #000D21;">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-sm-6 col-md-3 text-center text-sm-start">
                     <img style="height: 40px; object-fit: contain;" src="logo.png" alt="Brand Logo" class="mb-3">
                     <p class="text-white-50 small mb-3">Your one-stop destination for<br>all electronics needs.</p>
-                    <div class="d-flex gap-3 align-items-center">
-                        <a href=""><img style="height: 40px; width: 40px;" src="Product Image/Icons/facebook.png"
-                                alt=""></a>
-                        <a href=""><img style="height: 40px; width: 40px;" src="Product Image/Icons/insta.png"
-                                alt=""></a>
-                        <a href=""><img style="height: 40px; width: 40px;" src="Product Image/Icons/youtube.png"
-                                alt=""></a>
-                        <a href=""><img style="height: 40px; width: 40px;" src="Product Image/Icons/twitter.png"
-                                alt=""></a>
+                    <div class="d-flex gap-3 align-items-center justify-content-center justify-content-sm-start">
+                        <a href=""><img style="height: 35px; width: 35px;" src="Product Image/Icons/facebook.png"
+                                alt="Facebook"></a>
+                        <a href=""><img style="height: 35px; width: 35px;" src="Product Image/Icons/insta.png"
+                                alt="Instagram"></a>
+                        <a href=""><img style="height: 35px; width: 35px;" src="Product Image/Icons/youtube.png"
+                                alt="YouTube"></a>
+                        <a href=""><img style="height: 35px; width: 35px;" src="Product Image/Icons/twitter.png"
+                                alt="Twitter"></a>
                     </div>
                 </div>
 
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-sm-6 col-md-3 text-center text-sm-start">
                     <h5 class="text-white fs-5 mb-3">Quick Links</h5>
                     <a class="text-white-50 small d-block text-decoration-none mb-2" href="#home">Home</a>
                     <a class="text-white-50 small d-block text-decoration-none mb-2" href="#shop">Shop</a>
@@ -930,7 +938,7 @@
                     <a class="text-white-50 small d-block text-decoration-none" href="#contact">Contact Us</a>
                 </div>
 
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-sm-6 col-md-3 text-center text-sm-start">
                     <h5 class="text-white fs-5 mb-3">My Account</h5>
                     <a class="text-white-50 small d-block text-decoration-none mb-2" href="#orders">My Orders</a>
                     <a class="text-white-50 small d-block text-decoration-none mb-2" href="#track">Track Order</a>
@@ -938,44 +946,43 @@
                     <a class="text-white-50 small d-block text-decoration-none" href="login.html">Login</a>
                 </div>
 
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-sm-6 col-md-3 text-center text-sm-start">
                     <h5 class="text-white fs-5 mb-3">Contact Us</h5>
                     <div class="d-flex flex-column gap-2">
-                        <a href="#" class="text-white-50 small text-decoration-none"><img src="" alt=""><span
-                                class="ms-2">+91 6381582969</span></a>
-
-                        <a href="" class="text-white-50 small text-decoration-none"><img src="" alt=""><span
-                                class="ms-2">support@electromart.com</span></a>
-
-                        <a href="" class="text-white-50 text-decoration-none small mb-0 mt-1"><img src="" alt=""><span
-                                class="ms-2">123, Electronic Street, Chennai - 600001, India</span></a>
+                        <a href="tel:+916381582969" class="text-white-50 small text-decoration-none">
+                            <span>📞 +91 6381582969</span>
+                        </a>
+                        <a href="mailto:support@electromart.com" class="text-white-50 small text-decoration-none">
+                            <span>support@electromart.com</span>
+                        </a>
+                        <p class="text-white-50 small mb-0">
+                            <span>123, Electronic Street, Chennai - 600001, India</span>
+                        </p>
                     </div>
                 </div>
 
             </div>
 
-            <hr class="border-secondary">
-
-            <div class="row align-items-center mt-0">
-
-                <div class="col-12 col-md-6 text-center text-md-start mb-2 mb-md-0">
-                    <p class="text-white-50 small mb-0">© 2026 ElectroMart, All Rights Reserved.</p>
+            <hr class="border-secondary my-4">
+            <div class="row align-items-center gy-3">
+                <div class="col-12 col-md-6 text-center text-md-start">
+                    <p class="text-white-50 small mb-0">© 2026 ElectroMart. All Rights Reserved.</p>
                 </div>
 
                 <div class="col-12 col-md-6">
-                    <div class="d-flex gap-3 justify-content-center justify-content-md-end ">
-                        <a href="#"><img class="rounded" style="height: 30px; width: 80px;"
-                                src="Product Image/Icons/visa.png" alt=""></a>
-                        <a href="#"><img class="rounded" style="height: 30px; width: 80px;"
-                                src="Product Image/Icons/mastercard.png" alt=""></a>
-                        <a href="#"><img class="rounded" style="height: 30px; width: 80px;"
-                                src="Product Image/Icons/upi.png" alt=""></a>
-
+                    <div class="d-flex gap-2 justify-content-center justify-content-md-end">
+                        <a href="#"><img class="rounded bg-white p-1"
+                                style="height: 28px; width: 65px; object-fit: contain;"
+                                src="Product Image/Icons/visa.png" alt="Visa"></a>
+                        <a href="#"><img class="rounded bg-white p-1"
+                                style="height: 28px; width: 65px; object-fit: contain;"
+                                src="Product Image/Icons/mastercard.png" alt="Mastercard"></a>
+                        <a href="#"><img class="rounded bg-white p-1"
+                                style="height: 28px; width: 65px; object-fit: contain;"
+                                src="Product Image/Icons/upi.png" alt="UPI"></a>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </div>
 

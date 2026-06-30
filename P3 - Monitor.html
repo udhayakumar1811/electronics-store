@@ -10,13 +10,32 @@
 
 <body class="bg-white">
 
+    <div id="home" class="container-fluid py-2" style="background-color: #000D21;">
+        <div class="row align-items-center gy-3 gy-md-0">
+            <div class="col-12 col-md-3 text-center text-md-start ps-md-5">
+                <a href="#home">
+                    <img src="logo.png" alt="Brand Logo" class="img-fluid" style="max-width: 200px; height: auto;">
+                </a>
+            </div>
+
+            <div class="col-12 col-md-6 px-3 px-md-0">
+                <input type="text" class="form-control" placeholder="Search...">
+            </div>
+
+            <div class="col-12 col-md-3 d-flex justify-content-center justify-content-md-end gap-3 gap-md-4 pe-md-5">
+                <a href="login.html" class="text-light text-decoration-none">Login</a>
+                <a href="#" class="text-light text-decoration-none">🛒 Cart</a>
+            </div>
+        </div>
+    </div>
+
     <div class="container-fluid sticky-top" style="background-color: #001E4B;">
-        <nav class="navbar navbar-expand-lg navbar-dark ">
-            <ul class="navbar-nav ms-5">
+        <nav class="navbar navbar-expand-lg navbar-dark px-2 px-md-5">
+            <ul class="navbar-nav me-auto me-lg-0 mb-2 mb-lg-0">
                 <li class="nav-item dropdown">
-                    <button class="btn btn-primary dropdown-toggle px-3" type="button" data-bs-toggle="dropdown">
+                    <a class="btn btn-primary dropdown-toggle px-3" type="button" data-bs-toggle="dropdown">
                         All Categories
-                    </button>
+                    </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Mobiles</a></li>
                         <li><a class="dropdown-item" href="#">Laptops</a></li>
@@ -29,8 +48,12 @@
                 </li>
             </ul>
 
-            <div class="collapse navbar-collapse me-5">
-                <ul class="navbar-nav ms-auto">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto text-center text-lg-start pt-3 pt-lg-0">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
                     <li class="nav-item"><a class="nav-link" href="#deals">Deals</a></li>
@@ -86,6 +109,81 @@
                 </div>
             </div>
 
+        </div>
+    </div>
+
+    <div id="contact" class="container-fluid pt-5 pb-3" style="background-color: #000D21;">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-sm-6 col-md-3 text-center text-sm-start">
+                    <img style="height: 40px; object-fit: contain;" src="logo.png" alt="Brand Logo" class="mb-3">
+                    <p class="text-white-50 small mb-3">Your one-stop destination for<br>all electronics needs.</p>
+                    <div class="d-flex gap-3 align-items-center justify-content-center justify-content-sm-start">
+                        <a href=""><img style="height: 35px; width: 35px;" src="Product Image/Icons/facebook.png"
+                                alt="Facebook"></a>
+                        <a href=""><img style="height: 35px; width: 35px;" src="Product Image/Icons/insta.png"
+                                alt="Instagram"></a>
+                        <a href=""><img style="height: 35px; width: 35px;" src="Product Image/Icons/youtube.png"
+                                alt="YouTube"></a>
+                        <a href=""><img style="height: 35px; width: 35px;" src="Product Image/Icons/twitter.png"
+                                alt="Twitter"></a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 text-center text-sm-start">
+                    <h5 class="text-white fs-5 mb-3">Quick Links</h5>
+                    <a class="text-white-50 small d-block text-decoration-none mb-2" href="#home">Home</a>
+                    <a class="text-white-50 small d-block text-decoration-none mb-2" href="#shop">Shop</a>
+                    <a class="text-white-50 small d-block text-decoration-none mb-2" href="#deals">Deals</a>
+                    <a class="text-white-50 small d-block text-decoration-none mb-2" href="#about">About Us</a>
+                    <a class="text-white-50 small d-block text-decoration-none" href="#contact">Contact Us</a>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 text-center text-sm-start">
+                    <h5 class="text-white fs-5 mb-3">My Account</h5>
+                    <a class="text-white-50 small d-block text-decoration-none mb-2" href="#orders">My Orders</a>
+                    <a class="text-white-50 small d-block text-decoration-none mb-2" href="#track">Track Order</a>
+                    <a class="text-white-50 small d-block text-decoration-none mb-2" href="#account">Account Details</a>
+                    <a class="text-white-50 small d-block text-decoration-none" href="login.html">Login</a>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 text-center text-sm-start">
+                    <h5 class="text-white fs-5 mb-3">Contact Us</h5>
+                    <div class="d-flex flex-column gap-2">
+                        <a href="tel:+916381582969" class="text-white-50 small text-decoration-none">
+                            <span>📞 +91 6381582969</span>
+                        </a>
+                        <a href="mailto:support@electromart.com" class="text-white-50 small text-decoration-none">
+                            <span>support@electromart.com</span>
+                        </a>
+                        <p class="text-white-50 small mb-0">
+                            <span>123, Electronic Street, Chennai - 600001, India</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary my-4">
+            <div class="row align-items-center gy-3">
+                <div class="col-12 col-md-6 text-center text-md-start">
+                    <p class="text-white-50 small mb-0">© 2026 ElectroMart. All Rights Reserved.</p>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="d-flex gap-2 justify-content-center justify-content-md-end">
+                        <a href="#"><img class="rounded bg-white p-1"
+                                style="height: 28px; width: 65px; object-fit: contain;"
+                                src="Product Image/Icons/visa.png" alt="Visa"></a>
+                        <a href="#"><img class="rounded bg-white p-1"
+                                style="height: 28px; width: 65px; object-fit: contain;"
+                                src="Product Image/Icons/mastercard.png" alt="Mastercard"></a>
+                        <a href="#"><img class="rounded bg-white p-1"
+                                style="height: 28px; width: 65px; object-fit: contain;"
+                                src="Product Image/Icons/upi.png" alt="UPI"></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
